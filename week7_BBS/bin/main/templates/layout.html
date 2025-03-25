@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+
+</head>
+<body>
+<!-- 템플릿 상속에 사용할공용 템플릿 -->
+<!-- 각 템플릿 페이지에서 삽입될 부분 -->
+<th:block layout:fragment="content"></th:block>
+
+
+
+</body>
+</html>

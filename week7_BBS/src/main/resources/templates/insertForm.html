@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 등록 프로그램</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.min.css}">
+</head>
+<body>
+
+<div class="container my-5">
+    <h3 class="text-center border-bottom pb-3">★ 게시판 등록 프로그램 ★</h3>
+    
+    <form action="/question/insert" class="mt-4">
+        <div class="mb-3">
+            <label for="subject" class="form-label">제목</label>
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="제목을 입력하세요">
+        </div>
+        
+        <div class="mb-3">
+            <label for="content" class="form-label">내용</label>
+            <textarea id="content" name="content" rows="5" class="form-control" placeholder="내용을 입력하세요"></textarea>
+        </div>
+        
+        <div class="text-center">
+            <input type="submit" value="등록" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
